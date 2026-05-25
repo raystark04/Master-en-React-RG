@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e2e0e0;
+    font-family: Arial, sans-serif;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px dashed #fff;
+}
+
+.flex-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap; /*Es una forma de sustituir a flex-direction: row; flex-wrap: wrap; */
+    border: 1px dashed #000;
+    padding: 20px;
+    /* justify-content: space-between; */
+    /* justify-content: flex-start;
+    align-content: space-between; */
+    justify-content: center;
+    align-content: center;
+}
+
+.caja{
+    /* height: 120px;
+    width: 120px; */
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    border: 1px dashed #000;
+    color:black;
+    line-height: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.c1{
+    background-color: lightcoral;
+    order: 1;
+    flex-grow: 1;
+}
+.c2{
+    background-color: lightgreen;
+    order: 3;
+    flex-grow: 1;
+
+}
+.c3{
+    background-color: lightpink;
+    order: 2;
+    flex-grow: 5;
+}
